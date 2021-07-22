@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System;
 using System.Collections.Generic;
-
+using System.Text;
 namespace WF
 {
     class Program
@@ -34,14 +34,14 @@ namespace WF
 
             for (int i = 0; i < rows; i++)
             {
-                string sRow = ""; 
+                StringBuilder sRow = new StringBuilder("", MATRIX_ROWS);
                 //I will have a char in each column
                 for (int col = 0; col < cols; col++)
                 {
-                    sRow = string.Concat(sRow, new string(Enumerable.Repeat(chars, 1).Select(s => s[random.Next(s.Length)]).ToArray()));
+                    sRow.Append(new string(Enumerable.Repeat(chars, 1).Select(s => s[random.Next(s.Length)]).ToArray()));
                 }
                 //I trim it just in case I left any spaces
-                arrayList.Add(sRow.Trim());
+                arrayList.Add(sRow.ToString().Trim());
             }
 
             return arrayList;

@@ -25,8 +25,6 @@ namespace WF
             // I check how many words Im searching. Just to be sure...
             Console.WriteLine(string.Concat("There are: ", wordstream.Count(), " words in the list"));
 
-
-
             List<string> fWords = new List<string>();
             List<string> verticalWords = new List<string>();
             List<string> resultList = new List<string>();
