@@ -1,7 +1,7 @@
-using System.Security.Cryptography.X509Certificates;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace WF
 {
@@ -25,6 +25,8 @@ namespace WF
             // I check how many words Im searching. Just to be sure...
             Console.WriteLine(string.Concat("There are: ", wordstream.Count(), " words in the list"));
 
+            //Since X and Y are equals I use .Count in both directions
+            StringBuilder sVertical = new StringBuilder("", _matrix.Count());
 
             List<string> fWords = new List<string>();
             List<string> verticalWords = new List<string>();
@@ -33,14 +35,13 @@ namespace WF
             //I rearrange every char in the vertical dimension to be able to pass it to a string.
             for (int col = 0; col < _matrix.Count(); col++)
             {
-                string sVertical = "";
                 foreach (string item in _matrix)
                 {
-                    sVertical = string.Concat(sVertical, item.Substring(col, 1));
+                    sVertical.Append(item.Substring(col, 1));
                 }
 
                 //Console.WriteLine(sVertical.ToString());
-                verticalWords.Add(sVertical);
+                verticalWords.Add(sVertical.ToString());
             }
 
             foreach (string word in wordstream)
