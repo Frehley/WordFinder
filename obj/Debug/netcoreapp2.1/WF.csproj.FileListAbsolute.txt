@@ -1,0 +1,11 @@
+/home/frehley/Desarrollo/WF/bin/Debug/netcoreapp2.1/WF.deps.json
+/home/frehley/Desarrollo/WF/bin/Debug/netcoreapp2.1/WF.runtimeconfig.json
+/home/frehley/Desarrollo/WF/bin/Debug/netcoreapp2.1/WF.runtimeconfig.dev.json
+/home/frehley/Desarrollo/WF/bin/Debug/netcoreapp2.1/WF.dll
+/home/frehley/Desarrollo/WF/bin/Debug/netcoreapp2.1/WF.pdb
+/home/frehley/Desarrollo/WF/obj/Debug/netcoreapp2.1/WF.csprojAssemblyReference.cache
+/home/frehley/Desarrollo/WF/obj/Debug/netcoreapp2.1/WF.csproj.CoreCompileInputs.cache
+/home/frehley/Desarrollo/WF/obj/Debug/netcoreapp2.1/WF.AssemblyInfoInputs.cache
+/home/frehley/Desarrollo/WF/obj/Debug/netcoreapp2.1/WF.AssemblyInfo.cs
+/home/frehley/Desarrollo/WF/obj/Debug/netcoreapp2.1/WF.dll
+/home/frehley/Desarrollo/WF/obj/Debug/netcoreapp2.1/WF.pdb
