@@ -42,7 +42,7 @@ namespace WF
                     sVertical.Append(item.Substring(col, 1));
                 }
 
-                Console.WriteLine(sVertical.ToString());
+                //Console.WriteLine(sVertical.ToString());
                 verticalWords.Add(sVertical.ToString());
             }
 
