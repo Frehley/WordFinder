@@ -29,12 +29,14 @@ namespace WF
         {
             var random = new Random();
 
+            StringBuilder sRow = new StringBuilder("", MATRIX_ROWS);
+
             //I create a list of string wich later will be returned as IEnumerable
             List<string> arrayList = new List<string>();
 
             for (int i = 0; i < rows; i++)
             {
-                StringBuilder sRow = new StringBuilder("", MATRIX_ROWS);
+                sRow.Clear();
                 //I will have a char in each column
                 for (int col = 0; col < cols; col++)
                 {

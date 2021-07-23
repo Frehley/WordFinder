@@ -29,11 +29,13 @@ namespace WF
             List<string> verticalWords = new List<string>();
             List<string> resultList = new List<string>();
 
+            //Since X and Y are equals I use .Count in both directions
+            StringBuilder sVertical = new StringBuilder("", _matrix.Count());
+
             //I rearrange every char in the vertical dimension to be able to pass it to a string.
             for (int col = 0; col < _matrix.Count(); col++)
             {
-                //Since X and Y are equals I use .Count in both directions
-                StringBuilder sVertical = new StringBuilder("", _matrix.Count());
+                sVertical.Clear();
 
                 foreach (string item in _matrix)
                 {
